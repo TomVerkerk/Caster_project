@@ -14,6 +14,7 @@ public class EnemySpawner : MonoBehaviour {
 			for(int i = 0; i < spawnPoints.Count; i++)
 			{
 				Instantiate(Resources.Load("Enemy"),spawnPoints[i].transform.position,Quaternion.identity);
+				Destroy(gameObject);
 			}
 		}
 	}

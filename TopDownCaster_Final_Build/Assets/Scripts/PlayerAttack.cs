@@ -54,6 +54,12 @@ public class PlayerAttack : MonoBehaviour {
 
 		connector.attacking = attacking;
 		//-------------Select Spell-------------\\
+		if(Input.GetButtonDown("SpellNone"))
+		{
+			connector.sword = true;
+			currentSpell = spellTypes.none;
+			guiScript.isSwordActive();
+		}
 		if(Input.GetButtonDown("SpellFire") && fireSpellCount > 0)
 		{
 			connector.sword = false;

@@ -85,6 +85,11 @@ public class GUIScript : MonoBehaviour {
 		meleeTex.enabled = false;
 	}
 
+	public void isSwordActive()
+	{
+		clearIconState();
+		meleeTex.enabled = true;
+	}
 	public void isFireActive()
 	{
 		clearIconState();
