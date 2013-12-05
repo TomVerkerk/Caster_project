@@ -7,7 +7,7 @@ public class ReturnButton : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.Escape))
 		{
-			Application.LoadLevel("Menu");
+			Application.LoadLevel("Menu 1");
 		}
 	}
 }
